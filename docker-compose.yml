@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  rock-paper-scissor:
+    image: deweiliu/rock-paper-scissor
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 80:80
+    container_name: rock-paper-scissor-container
