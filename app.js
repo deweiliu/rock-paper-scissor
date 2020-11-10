@@ -66,12 +66,12 @@ const game = () => {
     //Check for Rock
     if (playerChoice === "rock") {
       if (computerChoice === "scissors") {
-        winner.textContent = "You Wins";
+        winner.textContent = "You Win";
         pScore++;
         updateScore();
         return;
       } else {
-        winner.textContent = "Dewei Wins";
+        winner.textContent = "Dewei Win";
         cScore++;
         updateScore();
         return;
@@ -99,7 +99,7 @@ const game = () => {
         updateScore();
         return;
       } else {
-        winner.textContent = "You Wins";
+        winner.textContent = "You Win";
         pScore++;
         updateScore();
         return;
