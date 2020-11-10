@@ -71,7 +71,7 @@ const game = () => {
         updateScore();
         return;
       } else {
-        winner.textContent = "Dewei Win";
+        winner.textContent = "Dewei Wins";
         cScore++;
         updateScore();
         return;
@@ -85,7 +85,7 @@ const game = () => {
         updateScore();
         return;
       } else {
-        winner.textContent = "You Wins";
+        winner.textContent = "You Win";
         pScore++;
         updateScore();
         return;
