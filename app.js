@@ -25,12 +25,12 @@ const game = () => {
         this.style.animation = "";
       });
     });
-    //Computer Options
+    //Dewei Options
     const computerOptions = ["rock", "paper", "scissors"];
 
     options.forEach(option => {
       option.addEventListener("click", function() {
-        //Computer Choice
+        //Dewei Choice
         const computerNumber = Math.floor(Math.random() * 3);
         const computerChoice = computerOptions[computerNumber];
 
@@ -66,12 +66,12 @@ const game = () => {
     //Check for Rock
     if (playerChoice === "rock") {
       if (computerChoice === "scissors") {
-        winner.textContent = "Player Wins";
+        winner.textContent = "You Wins";
         pScore++;
         updateScore();
         return;
       } else {
-        winner.textContent = "Computer Wins";
+        winner.textContent = "Dewei Wins";
         cScore++;
         updateScore();
         return;
@@ -80,12 +80,12 @@ const game = () => {
     //Check for Paper
     if (playerChoice === "paper") {
       if (computerChoice === "scissors") {
-        winner.textContent = "Computer Wins";
+        winner.textContent = "Dewei Wins";
         cScore++;
         updateScore();
         return;
       } else {
-        winner.textContent = "Player Wins";
+        winner.textContent = "You Wins";
         pScore++;
         updateScore();
         return;
@@ -94,12 +94,12 @@ const game = () => {
     //Check for Scissors
     if (playerChoice === "scissors") {
       if (computerChoice === "rock") {
-        winner.textContent = "Computer Wins";
+        winner.textContent = "Dewei Wins";
         cScore++;
         updateScore();
         return;
       } else {
-        winner.textContent = "Player Wins";
+        winner.textContent = "You Wins";
         pScore++;
         updateScore();
         return;
